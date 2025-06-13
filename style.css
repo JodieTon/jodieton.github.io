@@ -1,0 +1,132 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'monseratt', 'monseratt';
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000043;
+  color: white;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.hero {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem;
+  min-height: 400px;
+  overflow: hidden;
+  background: url('images/mcast-image.jpg') no-repeat center bottom/cover;
+  z-index: 1; /* keep hero content above */
+}
+
+/* Blurred overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: inherit; /* same background */
+  background-position: center bottom;
+  background-size: cover;
+  filter: blur(10px);
+  transform: scale(1.1);
+  z-index: -1;             /* send behind hero content */
+  pointer-events: none;    /* allow clicks through */
+}
+
+/* Make sure hero content is above blur */
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-btn {
+
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 3rem 2rem;
+  gap: 2rem;
+}
+
+.feature {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 300px;
+  text-align: center;
+  color: black;
+  background: rgba(255, 255, 255, 0.3);
+  
+  
+}
+
+.feature h2 {
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.feature a {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #000043;
+  color: rgb(255, 255, 255);
+}
