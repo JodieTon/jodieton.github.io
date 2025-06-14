@@ -34,8 +34,12 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #ffffff;
   font-weight: 500;
+}
+
+.nav a:hover {
+  color: #a9a9a9; 
 }
 
 .hero {
@@ -45,7 +49,7 @@ nav a {
   padding: 5rem 2rem;
   min-height: 400px;
   overflow: hidden;
-  background: url('images/mcast-image.jpg') no-repeat center bottom/cover;
+  background: url('images/MCAST-test2-cropped.png') no-repeat center bottom/cover;
   z-index: 1; /* keep hero content above */
 }
 
@@ -82,7 +86,7 @@ nav a {
 
 .cta-btn {
 
-  color: #000;
+  color: rgb(255, 255, 255);
   padding: 0.8rem 1.5rem;
   border: none;
   text-decoration: none;
@@ -92,11 +96,14 @@ nav a {
 
 .features {
   display: flex;
-  justify-content: space-around;
+  justify-content: center; 
   flex-wrap: wrap;
   padding: 3rem 2rem;
-  gap: 2rem;
+  gap: 4rem;
+  margin: 0;
 }
+
+
 
 .feature {
   background: white;
@@ -113,16 +120,34 @@ nav a {
 
 .feature h2 {
   margin-bottom: 1rem;
-  color: #000000;
+  color: black;
 }
 
 .feature a {
   display: inline-block;
   margin-top: 1rem;
   text-decoration: none;
-  color: black;
+  color: rgb(210, 210, 210);
   font-weight: bold;
 }
+
+.feature a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background-color: #000043;  
+  color: white;              
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+.feature a:hover {
+  background-color: #000043;  
+  color: #a9a9a9;                
+}
+
 
 footer {
   text-align: center;
