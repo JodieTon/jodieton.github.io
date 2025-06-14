@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - MCAST</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="contact-container">
+    <h1>Contact Us</h1>
+    <form action="mailto:information@mcast.edu.mt?subject=WebsiteContact&body=" method="post" enctype="text/plain">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required> 
+
+      <label for="subject">Subject</label>
+      <select name="subject" id="subject">
+          <option value="Query">Query</option>
+          <option value="Other">Other</option>
+          <option value="About Courses">About Courses</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea name="message" id="message" rows="4" cols="50" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</body>
+</html>

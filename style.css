@@ -155,3 +155,94 @@ footer {
   background: #000043;
   color: rgb(255, 255, 255);
 }
+
+
+
+/* === CONTACT PAGE STYLES === */
+
+.contact-container {
+  background-color: rgba(255, 255, 255, 0.05); 
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin: 5rem auto;
+  color: black;
+}
+
+
+.contact-container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #000000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  padding: 0.7rem;
+  background-color: #000043;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:  0.3s ease;
+}
+
+button:hover {
+  background-color: #5d5d5d;
+}
+
+/* === Contact Page Background === */
+
+body {
+  background-image: url('image/mcast-image.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Blurred overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: inherit;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+#subject {
+  margin-bottom: 1.5rem; /* Adjust the value as you like */
+  display: block;        /* Ensures margin works properly */
+}
+
+
+
+
