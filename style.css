@@ -216,17 +216,17 @@ button:hover {
   background-color: #5d5d5d;
 }
 
-/* === Contact Page Background === */
-
+/* Full-page background image with blur */
 body {
-  background-image: url('image/mcast-image.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  background: url('Images/contact.jpg') no-repeat center center fixed;
   background-size: cover;
+  font-family: Arial, sans-serif;
+  position: relative;
 }
 
-/* Blurred overlay */
+/* Blur overlay behind the form */
 body::before {
   content: "";
   position: fixed;
@@ -238,11 +238,61 @@ body::before {
   z-index: -1;
 }
 
-#subject {
-  margin-bottom: 1.5rem; /* Adjust the value as you like */
-  display: block;        /* Ensures margin works properly */
+/* Contact form container */
+.contact-container {
+  background-color: rgba(255, 255, 255, 0.3); /* semi-transparent */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin: 5rem auto;
+  color: black;
+  backdrop-filter: blur(4px); /* extra internal blur for a glass effect */
 }
 
+/* Typography */
+.contact-container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
 
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
 
+label {
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
 
+input, select, textarea {
+  padding: 0.6rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  padding: 0.7rem;
+  background-color: #000043;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #5d5d5d;
+}

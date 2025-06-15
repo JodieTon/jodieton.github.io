@@ -7,6 +7,19 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- HEADER copied from index page -->
+  <header>
+    <div class="logo">MCAST</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTACT SECTION -->
   <div class="contact-container">
     <h1>Contact Us</h1>
     <form action="mailto:information@mcast.edu.mt?subject=WebsiteContact&body=" method="post" enctype="text/plain">
@@ -23,11 +36,20 @@
           <option value="About Courses">About Courses</option>
       </select>
 
+      <!-- Added spacing -->
+      <div style="margin-bottom: 1rem;"></div>
+
       <label for="message">Message</label>
       <textarea name="message" id="message" rows="4" cols="50" required></textarea>
 
       <button type="submit">Send</button>
     </form>
   </div>
+
+  <!-- FOOTER copied from index page -->
+  <footer>
+    <p>&copy; 2025 MCAST Malta College of Arts, Science & Technology</p>
+  </footer>
 </body>
 </html>
+
