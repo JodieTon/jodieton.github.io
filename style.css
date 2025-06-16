@@ -1,4 +1,5 @@
 
+/* === INDEX PAGE STYLES === */
 
 * {
   margin: 0;
@@ -50,24 +51,24 @@ nav a {
   min-height: 400px;
   overflow: hidden;
   background: url('images/MCAST-test2-cropped.png') no-repeat center bottom/cover;
-  z-index: 1; /* keep hero content above */
+  z-index: 1; 
 }
 
-/* Blurred overlay */
+
 .hero::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: inherit; /* same background */
+  background: inherit; 
   background-position: center bottom;
   background-size: cover;
   filter: blur(10px);
   transform: scale(1.1);
-  z-index: -1;             /* send behind hero content */
-  pointer-events: none;    /* allow clicks through */
+  z-index: -1;             
+  pointer-events: none;    
 }
 
-/* Make sure hero content is above blur */
+
 .hero > * {
   position: relative;
   z-index: 2;
@@ -216,7 +217,7 @@ button:hover {
   background-color: #5d5d5d;
 }
 
-/* Full-page background image with blur */
+
 body {
   margin: 0;
   padding: 0;
@@ -226,7 +227,7 @@ body {
   position: relative;
 }
 
-/* Blur overlay behind the form */
+
 body::before {
   content: "";
   position: fixed;
@@ -238,7 +239,7 @@ body::before {
   z-index: -1;
 }
 
-/* Contact form container */
+
 .contact-container {
   background-color: rgba(255, 255, 255, 0.3); 
   padding: 2rem;
@@ -251,13 +252,13 @@ body::before {
   backdrop-filter: blur(4px); 
 }
 
-/* Typography */
+
 .contact-container h1 {
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
-/* Form styles */
+
 form {
   display: flex;
   flex-direction: column;
@@ -303,7 +304,7 @@ button:hover {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Montserrat';
 }
 
 body {
@@ -436,4 +437,11 @@ footer {
   padding: 1rem 7rem;
   margin-top: 3rem;
   border-top: 2px solid #333366;
+}
+
+
+.courses-page-styles .hero {
+  background: none;
+  background-color: #000043;
+  min-height: 400px; 
 }
