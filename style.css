@@ -471,3 +471,158 @@ footer {
   background-color: #000043;
   min-height: 400px; 
 }
+
+.programme-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+/* === ICA PAGE STYLES === */
+
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background: url('images/MCASTMosta.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: inherit;
+  background-size: cover;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+
+.ica-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.25); 
+  border-radius: 10px;
+  backdrop-filter: blur(4px); 
+}
+
+
+.ica-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+
+.ica-text {
+  max-width: 600px;
+}
+
+.ica-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #000043;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.ica-text p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  color: #000;
+}
+
+
+.ica-btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background-color: #000043;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.ica-btn:hover {
+  background-color: #333366;
+}
+
+
+@media (max-width: 768px) {
+  .ica-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ica-text {
+    max-width: 100%;
+  }
+}
+
+.ica-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 35%;  
+}
+
+.ica-image-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 0.5rem;
+}
+
+.image-caption {
+  font-size: 0.9rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
+
+.ica-text {
+  flex: 1; 
+  max-width: none;
+}
+
+.ica-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;   
+  align-items: flex-start;   
+  gap: 2rem;
+  
+  max-width: 900px;          
+  margin: 4rem auto;         
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+}
+
+.ica-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 35%;
+  max-width: 300px;          
+}
+
+.ica-text {
+  flex: 1;
+  max-width: 500px;          
+}
+
