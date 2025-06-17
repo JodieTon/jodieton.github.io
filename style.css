@@ -40,7 +40,7 @@ nav a {
 }
 
 .nav a:hover {
-  color: #a9a9a9; 
+  color: white; 
 }
 
 .hero {
@@ -64,7 +64,7 @@ nav a {
 
 
 
-.hero > * {
+.hero  * {
   position: relative;
   z-index: 2;
 }
@@ -140,8 +140,8 @@ nav a {
 }
 
 .feature a:hover {
-  background-color: #000043;  
-  color: #a9a9a9;                
+  background-color: #333366;  
+  color: white;                
 }
 
 
@@ -209,7 +209,7 @@ button {
 }
 
 button:hover {
-  background-color: #5d5d5d;
+  background-color: #333366;
 }
 
 
@@ -290,7 +290,7 @@ button {
 }
 
 button:hover {
-  background-color: #5d5d5d;
+  background-color: #333366;
 }
 
 /* === COURSES PAGE STYLES === */
@@ -533,7 +533,7 @@ body::before {
   font-size: 1.8rem;
   margin-bottom: 1rem;
   color: #000043;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #ffffff;
   padding-bottom: 0.5rem;
 }
 
