@@ -1,6 +1,7 @@
 
 /* === INDEX PAGE STYLES === */
 
+
 * {
   margin: 0;
   padding: 0;
@@ -152,6 +153,8 @@ footer {
 
 
 
+
+
 /* === CONTACT PAGE STYLES === */
 
 .contact-container {
@@ -216,7 +219,7 @@ body {
   padding: 0;
   background: url('Images/contact.jpg') no-repeat center center fixed;
   background-size: cover;
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   position: relative;
 }
 
@@ -483,7 +486,7 @@ footer {
 body {
   position: relative;
   min-height: 100vh;
-  background: ('images/MCASTMosta.jpg') no-repeat center center fixed;
+  background: ('images/MCASTMosta.jpg');
   background-size: cover;
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
