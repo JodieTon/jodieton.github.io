@@ -486,7 +486,7 @@ footer {
 body {
   position: relative;
   min-height: 100vh;
-  background: ('images/MCASTMosta.jpg');
+  background: ('images/mcastmosta.jpg');
   background-size: cover;
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
@@ -573,6 +573,7 @@ body::before {
 }
 
 .ica-image-wrapper {
+  
   display: flex;
   flex-direction: column;
   align-items: center;
